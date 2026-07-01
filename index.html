@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>介護報酬ミニクイズ</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="screen screen-active" id="study-screen" aria-labelledby="study-title">
+        <div class="video-pane">
+          <video class="study-video" src="./assets/movie01.mp4" autoplay loop muted playsinline controls></video>
+        </div>
+        <div class="study-panel">
+          <p class="kicker">介護保険制度</p>
+          <h1 id="study-title">動画で覚えて、すぐ確認</h1>
+          <p class="lead">見終わったらクイズへ進めます。動画はくり返し再生されます。</p>
+          <button class="primary-button" id="start-quiz" type="button">覚えた！</button>
+        </div>
+      </section>
+      <section class="screen quiz-screen" id="quiz-screen" aria-labelledby="quiz-title">
+        <header class="quiz-header">
+          <div><p class="kicker">確認クイズ</p><h1 id="quiz-title">介護報酬・支給限度額</h1></div>
+          <div class="score-box" aria-live="polite"><span id="question-count">1 / 7</span><strong id="score">0点</strong></div>
+        </header>
+        <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+        <article class="question-card"><h2 id="question-text"></h2><div class="choices" id="choices"></div><div class="feedback" id="feedback" aria-live="polite"></div></article>
+        <div class="actions"><button class="ghost-button" id="back-study" type="button">動画に戻る</button><button class="primary-button" id="next-question" type="button" disabled>次へ</button></div>
+      </section>
+      <section class="screen result-screen" id="result-screen" aria-labelledby="result-title">
+        <div class="result-panel"><p class="kicker">結果</p><h1 id="result-title">おつかれさまでした</h1><p class="result-score" id="result-score"></p><p class="result-message" id="result-message"></p><div class="actions result-actions"><button class="ghost-button" id="review-video" type="button">動画をもう一度</button><button class="primary-button" id="retry-quiz" type="button">もう一回解く</button></div></div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
