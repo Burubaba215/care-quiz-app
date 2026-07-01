@@ -19,7 +19,7 @@ const trueFalseQuestions = [
 ];
 
 const fillQuestions = [
-  { phase: "穴埋め問題", type: "fill", question: "Q15 介護報酬の審査・支払業務の実務は、□□連に委託される。", answers: ["国保連", "国民健康保険団体連合会"], explanation: "答えは国保連。市町村が保険者、実務は国保連です。" },
+  { phase: "穴埋め問題", type: "fill", question: "Q15 介護報酬の審査・支払業務の実務は、□□に委託される。", answers: ["国保連"], explanation: "答えは国保連。市町村が保険者、実務は国保連です。" },
   { phase: "穴埋め問題", type: "fill", question: "Q16 償還払いは、利用者がいったん□□を支払い、後から払い戻しを受ける方式。", answers: ["全額"], explanation: "答えは全額。後から保険給付分の払い戻しを受けます。" },
   { phase: "穴埋め問題", type: "fill", question: "Q17 区分支給限度基準額を超えて使いたい場合、市町村は区分支給限度基準額の□□ができる。", answers: ["上乗せ", "上のせ"], explanation: "答えは上乗せ。市町村特別給付とは区別します。" },
   { phase: "穴埋め問題", type: "fill", question: "Q18 サービス種類ごとに市町村が上限を設定できるのは、□□支給限度基準額。", answers: ["種類", "種類支給限度基準額"], explanation: "答えは種類。種類支給限度基準額です。" },
